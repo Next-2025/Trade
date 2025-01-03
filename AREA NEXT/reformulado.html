@@ -741,7 +741,9 @@
 
                                             <div id="chartGraphic_ETH/USD" class="chartGraphicGL">
                                                 <div id="grafico" style="position: relative; width: 100%; height: 100%;">
-                                                    <img src="img/FUNDO NEXT.png" draggable="false" alt="" class="imgFundo">
+                                                    <div class="containeir-img">
+                                                        <img src="img/FUNDO NEXT.png" draggable="false" alt="" class="imgFundo">
+                                                    </div>
                                                 </div>
 
                                                 <div id="loadingChart" class="active">
@@ -2431,6 +2433,10 @@
     </style>
     <div id="notifications"></div>
     <script>
+        $(document).ready(function () {
+            $("#loadingChart").removeClass("active").addClass("deactivate");
+            // Adicione aqui o código que depende do DOM estar carregado
+        });
         function showToast(iconClass, title, description) {
             const toastId = 'toast_' + new Date().getTime();
             const toastHtml = `
