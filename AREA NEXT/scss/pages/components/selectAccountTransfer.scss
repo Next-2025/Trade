@@ -1,0 +1,151 @@
+.sideBarPanel{
+    .selectAccountTransferPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .selectAccountTransferPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPanelselectAccountTransfer{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePanelselectAccountTransfer{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .selectAccountTransferPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            padding: 16px 0;
+            flex-direction: column;
+            .currentCurrency{
+                width: 100%;
+                padding: 16px;
+                transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                .currentCurrencyContent{
+                    width: 100%;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    .currencyIcon{
+                        max-width: 24px;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .currencyDetails{
+                        width: 100%;
+                        .accountId{
+                            display: flex;
+                            gap: 26px;
+                            .idTransfer{
+                                font-size: 16px;
+                                color: #70808c;
+                                line-height: 1.5rem;
+                                font-weight: 400;
+                            }
+                            .currencyName{
+                                font-size: 16px;
+                                color: #fff;
+                                line-height: 1.5rem;
+                                font-weight: 400;
+                            }
+                            
+                        }
+                        .profit{
+                            font-size: 16px;
+                            color: #70808c;
+                            line-height: 1.5rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .currentCurrencyBtns{
+                    display: none;
+                    padding: 16px 0px 0px;
+                    min-height: 0px;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 8px;
+                    grid-auto-flow: column;
+                    grid-auto-columns: 1fr 1fr;
+                    button{
+                        min-height: 40px;
+                        max-height: 100%;
+                        max-width: 100%;
+                        width: 100%;
+                        display: flex;
+                        padding: 8px 16px;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba(94, 105, 120, .2117647059);
+                        box-shadow: inset 0 0 0 1px rgba(242, 242, 242, 0);
+                        border-radius: 8px;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: #fff;
+                        transition: filter .2s ease-in-out, color .2s ease-in-out, background .2s ease-in-out, -webkit-filter .2s ease-in-out;
+                    }
+                    button:hover{
+                        background: #5e697852;
+                    }
+                    .focus{
+                        background-color: var(--primary-color);
+                    }
+                }
+                .currentCurrencyBtns.active{
+                    display: grid;
+                }
+            }
+            .currentCurrency.active{
+                background: #5e697836;
+            }
+            .currentCurrency:hover{
+                background-color: #5e697852;
+            }
+        }
+    }
+}

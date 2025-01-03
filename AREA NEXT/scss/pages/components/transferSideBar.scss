@@ -1,0 +1,222 @@
+.sideBarPanel{
+    .transferPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .transferPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPaneltransfer{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePaneltransfer{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .transferPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 24px;
+            padding: 16px;
+            flex-direction: column;
+            .currentCurrency{
+                width: 100%;
+                padding: 16px;
+                border-radius:8px;
+                background-color: #1a1d21;
+                transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                .currentCurrencyContent{
+                    width: 100%;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    .currencyIcon{
+                        max-width: 24px;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .currencyDetails{
+                        width: 100%;
+                        .currencyName{
+                            font-size: 16px;
+                            color: #fff;
+                            line-height: 1.5rem;
+                            font-weight: 400;
+                            span{
+                                color: #9cb0c2;
+                            }
+                        }
+                        .profit{
+                            font-size: 16px;
+                            color: #9cb0c2;
+                            line-height: 1.5rem;
+                            font-weight: 700;
+                        }
+                    }
+                    .notice{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 8px;
+                        padding: 4px;
+                        transition: filter .2s ease-in-out, color .2s ease-in-out, background .2s ease-in-out, -webkit-filter .2s ease-in-out;
+                        svg{
+                            min-width: 24px;
+                            width: 100%;
+                            color: #f9b42e;
+                        }
+                    }
+                    .accountMoreDetails:hover{
+                        background: #5e697852;
+                    }
+                }
+            }
+            .currentCurrency:hover{
+                background-color: #5e697852;
+            }
+            .paymentsBtn{
+                width: 100%;
+                gap: 8px;
+                display: flex;
+                align-items: center;
+                padding: 16px;
+                border-radius: 8px;
+                background-color: #5e697836;;
+                transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                .paymentsBtnIcon{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .titlePaymentsBtn{
+                    font-size: 16px;
+                    line-height: 1.25rem;
+                    font-weight: 700;
+                    color: #fff;
+                    margin: 0 auto;
+                }
+            }
+            .paymentsBtn.active{
+                background-color: var(--primary-color);
+            }
+            .paymentsBtn:hover{
+                background-color: #5e697852;
+            }
+            .info{
+                background-color: #14161a;
+                border: .0625rem solid #55596859;
+                border-radius: .75rem;
+                position: relative;
+                .infoContent{
+                    display: inline-grid;
+                    padding: 16px;
+                    width: 100%;
+                    min-height: 0px;
+                    grid-template-columns: auto 1fr;
+                    grid-auto-flow: column;
+                    svg{
+                        width: 1em;
+                        color: #f9b42e;
+                        display: inline-block;
+                        flex-shrink: 0;
+                        font-size: 1.5rem;
+                        height: 1em;
+                        overflow: hidden;
+                    }
+                    .infoText{
+                        display: grid;
+                        padding: 0px 0px 0px 12px;
+                        min-height: 0px;
+                        grid-auto-flow: row;
+                        p{
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 1.25rem;
+                            color: #f9b42e;
+                        }
+                    }
+                }
+            }
+            .infoSecurity{
+                margin-top: 1rem;
+                padding: 1rem 0px 2.625rem;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-shrink: 0;
+                max-width: 83%;
+                margin-left: auto;
+                margin-right: auto;
+                .iconSecurity{
+                    border: 0.0625rem solid #14161a;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 12px;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    color: rgb(93, 203, 169);
+                    svg{
+                        font-size: 1.5rem;
+                        height: 1em;
+                    }
+                }
+                span{
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 1rem;
+                    text-align: center;
+                    color: #9cb0c2;
+                }
+            }
+        }
+    }
+}

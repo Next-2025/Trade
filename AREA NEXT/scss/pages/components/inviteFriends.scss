@@ -1,0 +1,234 @@
+.sideBarPanel{
+    .inviteFriendsPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .inviteFriendsPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPanelinviteFriends{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePanelinviteFriends{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .inviteFriendsPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 24px;
+            padding: 16px;
+            flex-direction: column;
+            .inviteFriendsText{
+                font-size: 16px;
+                font-weight: 400;
+                color: #9cb0c2;
+            }
+            .btnsSection{
+                width: 100%;
+                min-height: 0px;
+                display: flex;
+                gap: 16px;
+                padding-bottom: 24px;
+                flex-direction: column;
+                .inviteFriendsBtn{
+                    width: 100%;
+                    height: max-content;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 12px 16px;
+                    border-radius: 8px;
+                    background-color: #5e697836;;
+                    transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                    .inviteFriendsBtnIcon{
+                        width: 24px;
+                        height: 24px;
+                        svg{
+                            width: 100%;
+                            color: #fff;
+                            fill: #fff;
+                        }
+                    }
+                    .titleinviteFriendsBtn{
+                        p{
+                            font-size: 16px;
+                            line-height: 1.25rem;
+                            font-weight: 700;
+                            color: #fff;
+                        }
+                        span{
+                            font-size: 13px;
+                            line-height: 16px;
+                            font-weight: 400;
+                            color: #fff;
+                        }
+                    }
+                }
+                .inviteFriendsBtn.active{
+                    background-color: var(--primary-color);
+                }
+                .inviteFriendsBtn.disable{
+                    background-color: #5e69781f;
+                    .inviteFriendsBtnIcon{
+                        svg{
+                            color: #70808c;
+                        }
+                    }
+                    .titleinviteFriendsBtn{
+                        p{
+                            color: #70808c;
+                        }
+                        span{
+                            color: #70808c;
+                        }
+                    }
+                }
+                .inviteFriendsBtn:hover{
+                    background-color: #5e697852;
+                }
+            }
+            .boxInvites{
+                border-radius: 1.25rem;
+                height: 21.5rem;
+                max-height: 21.5rem;
+                overflow: hidden;
+                position: relative;
+                .boxBg{
+                    align-items: flex-end;
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    img{
+                        display: block;
+                        height: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        object-fit: cover;
+                    }
+                }
+                .box{
+                    align-items: flex-end;
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+                .boxContent{
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    .contentText{
+                        .texts{
+                            display: flex;
+                            min-height: 0px;
+                            flex-direction: column;
+                            .boxSubtitle{
+                                p{
+                                    font-weight: 700;
+                                    letter-spacing: .04em;
+                                    text-transform: uppercase;
+                                    font-size: .8125rem;
+                                    line-height: 1.25rem;
+                                    color: #fff;
+                                    text-align: center;
+                                }
+                            }
+                            .boxTitle{
+                                p{
+                                    text-align: center;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                    line-height: 1.5rem;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    button{
+                        background: #ffffff26;
+                        -webkit-backdrop-filter: blur(4px);
+                        backdrop-filter: blur(4px);
+                        box-shadow: none;
+                        color: #fff;
+                        border: none;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        height: fit-content;
+                        margin: 0;
+                        outline: none;
+                        position: relative;
+                        text-align: center;
+                        text-decoration: none;
+                        transition: filter .2s ease-in-out, color .2s ease-in-out, background .2s ease-in-out, -webkit-filter .2s ease-in-out;
+                        display: flex;
+                        padding: 12px 16px;
+                        width: 100%;
+                        min-height: 0px;
+                        max-height: 100%;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        font-size: 1rem;
+                        line-height: 1.25rem;
+                        font-weight: 700;
+                    }
+                    button:hover{
+                        background: #5e697852;
+                    }
+                }
+            }
+        }
+    }
+}

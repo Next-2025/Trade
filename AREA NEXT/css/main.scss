@@ -1,0 +1,37 @@
+// Importa os componentes SCSS
+@use 'components/accountNameCreate';
+@use 'components/accountSideBar';
+@use 'components/auth';
+@use 'components/boxReward';
+@use 'components/confirmEmail';
+@use 'components/createAccount';
+@use 'components/depositSiderBar';
+@use 'components/editNameSideBar';
+@use 'components/floatingElementes';
+@use 'components/header';
+@use 'components/improvementCubes';
+@use 'components/inviteFriends';
+@use 'components/leftLateralMenu';
+@use 'components/negotiationClosed';
+@use 'components/newPassword';
+@use 'components/noticeDeposit';
+@use 'components/panelLeft';
+@use 'components/pathtrader';
+@use 'components/paymentsSideBar';
+@use 'components/personSettingsSideBar';
+@use 'components/profileSideBar';
+@use 'components/selectAccount';
+@use 'components/selectAccountTransfer';
+@use 'components/settingsSideBar';
+@use 'components/sideBar';
+@use 'components/transferSideBar';
+@use 'components/valueDeposit';
+@use 'components/verification';
+@use 'components/withdrawSideBar';
+
+// Importa as páginas SCSS
+@use 'components/pages/fonts';
+@use 'components/pages/index';
+@use 'components/pages/reset';
+@use 'components/pages/responsivo';
+@use 'components/pages/animations';

@@ -1,0 +1,229 @@
+.sideBarPanel{
+    .withdrawPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .withdrawPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPanelwithdraw{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePanelwithdraw{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .withdrawPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 24px;
+            padding: 16px;
+            flex-direction: column;
+            .currentCurrency{
+                width: 100%;
+                padding: 16px;
+                border-radius:8px;
+                transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                .currentCurrencyContent{
+                    width: 100%;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    .currencyIcon{
+                        max-width: 24px;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .currencyDetails{
+                        width: 100%;
+                        .currencyName{
+                            font-size: 16px;
+                            color: #fff;
+                            line-height: 1.5rem;
+                            font-weight: 400;
+                        }
+                        .profit{
+                            font-size: 16px;
+                            color: #fff;
+                            line-height: 1.5rem;
+                            font-weight: 700;
+                        }
+                    }
+                    .reloadAccount{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 8px;     
+                        padding: 4px;
+                        transition: filter .2s ease-in-out, color .2s ease-in-out, background .2s ease-in-out, -webkit-filter .2s ease-in-out;
+                        svg{
+                            width: 100%;
+                            color: #fff;
+                            fill: #fff;
+                        }
+                    }
+                    .reloadAccount:hover{
+                        background: #5e697852;
+                    }
+                    .accountMoreDetails{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 8px;
+                        padding: 4px;
+                        transition: filter .2s ease-in-out, color .2s ease-in-out, background .2s ease-in-out, -webkit-filter .2s ease-in-out;
+                        svg{
+                            min-width: 24px;
+                            width: 100%;
+                            color: #fff;
+                            fill: #fff;
+                        }
+                    }
+                    .accountMoreDetails:hover{
+                        background: #5e697852;
+                    }
+                }
+                .currentCurrencyBtns{
+                    display: none;
+                    padding: 16px 0px 0px;
+                    min-height: 0px;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 8px;
+                    grid-auto-flow: column;
+                    grid-auto-columns: 1fr 1fr;
+                    button{
+                        min-height: 40px;
+                        max-height: 100%;
+                        max-width: 100%;
+                        width: 100%;
+                        display: flex;
+                        padding: 8px 16px;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba(94, 105, 120, .2117647059);
+                        box-shadow: inset 0 0 0 1px rgba(242, 242, 242, 0);
+                        border-radius: 8px;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: #fff;
+                        transition: filter .2s ease-in-out, color .2s ease-in-out, background .2s ease-in-out, -webkit-filter .2s ease-in-out;
+                    }
+                    button:hover{
+                        background: #5e697852;
+                    }
+                    .focus{
+                        background-color: var(--primary-color);
+                    }
+                }
+                .currentCurrencyBtns.active{
+                    display: grid;
+                }
+            }
+            .currentCurrency.active{
+                background: #5e697836;
+            }
+            .currentCurrency:hover{
+                background-color: #5e697852;
+            }
+            .info{
+                background-color: #14161a;
+                border: .0625rem solid #55596859;
+                border-radius: .75rem;
+                position: relative;
+                .infoContent{
+                    display: inline-grid;
+                    padding: 16px;
+                    width: 100%;
+                    min-height: 0px;
+                    grid-template-columns: auto 1fr;
+                    grid-auto-flow: column;
+                    svg{
+                        width: 1em;
+                        fill: #fff;
+                        color: #fff;
+                        display: inline-block;
+                        flex-shrink: 0;
+                        font-size: 1.5rem;
+                        height: 1em;
+                        overflow: hidden;
+                    }
+                    .infoText{
+                        display: grid;
+                        padding: 0px 0px 0px 12px;
+                        min-height: 0px;
+                        grid-auto-flow: row;
+                        p{
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 1.25rem;
+                            color: #9cb0c2;
+                        }
+                        a{
+                            display: inline-flex;
+                            align-items: center;    
+                            color: var(--primary-color);
+                            font-size: 13px;
+                            font-weight: 500;
+                            letter-spacing: .005em;
+                            line-height: 1.5;
+                            svg{
+                                width: 24px;
+                                height: 24px;
+                                color: var(--primary-color);
+                            }
+                        }
+                        a:hover{
+                            color: #f9b42e;
+                            svg{
+                                color: #f9b42e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

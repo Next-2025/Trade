@@ -1,0 +1,158 @@
+.sideBarPanel{
+    .depositPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .depositPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPaneldeposit{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePaneldeposit{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .depositPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 8px;
+            padding: 16px;
+            flex-direction: column;
+            .accountDeposit{
+                margin-bottom: 16px;
+                p{
+                    font-size: 13px;
+                    color: #9cb0c2;
+                }
+                hr{
+                    margin: 8px 0px 0px;
+                    width: 100%;
+                    background-color: #55596859;
+                    border: none;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    height: .0625rem;
+                }
+            }
+            .btnsSection{
+                width: 100%;
+                height: 100%;
+                min-height: 0px;
+                display: flex;
+                gap: 8px;
+                padding-bottom: 24px;
+                flex-direction: column;
+                .depositBtn{
+                    width: 100%;
+                    height: max-content;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 12px 16px;
+                    border-radius: 8px;
+                    background-color: #5e697836;;
+                    transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                    .depositBtnIcon{
+                        width: 24px;
+                        height: 24px;
+                        svg{
+                            width: 100%;
+                            color: #fff;
+                            fill: #fff;
+                        }
+                    }
+                    .titledepositBtn{
+                        p{
+                            font-size: 16px;
+                            line-height: 1.25rem;
+                            font-weight: 700;
+                            color: #fff;
+                        }
+                        span{
+                            font-size: 13px;
+                            line-height: 16px;
+                            font-weight: 400;
+                            color: #fff;
+                        }
+                    }
+                }
+                .depositBtn:hover{
+                    background-color: #5e697852;
+                }
+            }
+            .infoSecurity{
+                margin-top: 1rem;
+                padding: 1rem 0px 2.625rem;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-shrink: 0;
+                max-width: 83%;
+                margin-left: auto;
+                margin-right: auto;
+                .iconSecurity{
+                    border: 0.0625rem solid #14161a;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 12px;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    color: rgb(93, 203, 169);
+                    svg{
+                        font-size: 1.5rem;
+                        height: 1em;
+                    }
+                }
+                span{
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 1rem;
+                    text-align: center;
+                    color: #9cb0c2;
+                }
+            }
+        }
+    }
+}

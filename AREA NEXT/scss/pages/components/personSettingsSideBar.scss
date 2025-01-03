@@ -1,0 +1,142 @@
+.sideBarPanel{
+    .personSettingsPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .personSettingsPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPanelpersonSettings{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePanelpersonSettings{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .personSettingsPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 8px;
+            padding: 16px;
+            flex-direction: column;
+            .btnsSectionTitle{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: start;
+                p{
+                    font-size: 21px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    color: #fff;
+                }
+            }
+            .btnsSection{
+                width: 100%;
+                min-height: 0px;
+                display: flex;
+                gap: 8px;
+                padding-bottom: 24px;
+                flex-direction: column;
+                .personSettingsBtn{
+                    width: 100%;
+                    height: max-content;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    padding: 12px 16px;
+                    border-radius: 8px;
+                    background-color: #5e697836;;
+                    transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                    .personSettingsBtnIcon{
+                        width: 24px;
+                        height: 24px;
+                        svg{
+                            width: 100%;
+                            color: #fff;
+                            fill: #fff;
+                        }
+                    }
+                    .titlepersonSettingsBtn{
+                        p{
+                            font-size: 16px;
+                            line-height: 1.25rem;
+                            font-weight: 700;
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+                .personSettingsBtn:hover{
+                    background-color: #5e697852;
+                }
+            }
+            .leaveProfileBtn{
+                width: 100%;
+                gap: 8px;
+                display: flex;
+                align-items: center;
+                padding: 12px 16px;
+                border-radius: 8px;
+                background-color: #5e697836;
+                transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                .leaveProfileBtnIcon{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #e24f32;
+                        fill: #e24f32;
+                    }
+                }
+                .titleLeaveProfileBtn{
+                    margin: 0 auto;
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        color: #e24f32;
+                    }
+                }
+            }
+            .leaveProfileBtn:hover{
+                background-color: #5e697852;
+            }
+        }
+    }
+}

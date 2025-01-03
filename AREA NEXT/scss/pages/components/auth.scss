@@ -1,0 +1,132 @@
+.sideBarPanel{
+    .authPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        .authPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            
+                .backPanelAuth{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePanelauth{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .authPanelContent{
+            width: 100%;
+            height: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 24px;
+            padding: 16px;
+            flex-direction: column;
+            .textauth{
+                p{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+            .authOptionsBtns{
+                display: grid;
+                min-height: 0px;
+                gap: 16px;
+                grid-template-columns: repeat(2, minmax(150px, 1fr));
+                grid-auto-flow: row;
+                .btnAuth{
+                    padding: 12px 16px 16px;
+                    border-radius: 16px;
+                    width: 100%;
+                    cursor: pointer;
+                    background: #5e697826;
+                    box-shadow: inset 0 0 0 .0625rem #f2f2f200;
+                    .btnAuthContent{
+                        display: grid;
+                        width: 100%;
+                        height: 100%;
+                        min-height: 0px;
+                        max-height: 100%;
+                        max-width: 100%;
+                        gap: 12px;
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-auto-flow: row;
+                        .iconOption{
+                            display: flex;
+                            min-height: 0px;
+                            justify-content: space-between;
+                            flex-direction: row;
+                            gap: 12px;
+                            img{
+                                width: 48px;
+                                height: 48px;
+                            }
+                            span{
+                                height: fit-content;
+                                border-radius: 4px;
+                                font-weight: 700;
+                                letter-spacing: .04em;
+                                text-transform: uppercase;
+                                font-size: .8125rem;
+                                line-height: 1rem;
+                                background: #f9b42e;
+                                color: #312102;
+                                padding: .125rem .25rem;
+                            }
+                        }
+                        .nameOption{
+                            display: grid;
+                            padding: 4px 0px;
+                            min-height: 0px;
+                            align-self: end;
+                            gap: 4px;
+                            grid-auto-flow: row;
+                            p{
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 1.25rem;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

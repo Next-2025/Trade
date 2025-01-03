@@ -1,0 +1,289 @@
+.sideBarPanel{
+    .pathTraderPanelContainer{
+        max-width: 420px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .pathTraderPanelHeader{
+            width: 100%;
+            height: 92px;
+            padding: 14px 16px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-direction: column;
+            .actionBtns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .backPanelpathTrader{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+                .closePanelpathTrader{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        width: 100%;
+                        color: #fff;
+                        fill: #fff;
+                    }
+                }
+            }
+            .titleHeader{
+                h2{
+                    font-size: 27px;
+                    color: #fff;
+                }
+            }
+        }
+        .pathTraderPanelContent{
+            width: 100%;
+            min-height: 0px;
+            display: flex;
+            gap: 24px;
+            padding: 16px;
+            flex-direction: column;
+            .pathText{
+                font-size: 16px;
+                font-weight: 400;
+                color: #9cb0c2;
+            }
+            .btnsSection{
+                width: 100%;
+                min-height: 0px;
+                display: flex;
+                gap: 8px;
+                flex-direction: column;
+                position: relative;
+                .pathBtn{
+                    width: 100%;
+                    height: max-content;
+                    gap: 12px;
+                    display: flex;
+                    align-items: center;
+                    padding: 12px 16px;
+                    border-radius: 8px;
+                    background-color: #5e697836;;
+                    transition: filter .2s ease-in-out,color .2s ease-in-out,background .2s ease-in-out,-webkit-filter .2s ease-in-out;
+                    position: relative;
+                    .pathBtnIcon{
+                        min-width: 24px;
+                        width: 24px;
+                        height: 24px;
+                        svg{
+                            width: 100%;
+                            color: #fff;
+                            fill: #fff;
+                        }
+                    }
+                    .titlePathBtn{
+                        p{
+                            font-size: 16px;
+                            line-height: 1.25rem;
+                            font-weight: 700;
+                            color: #fff;
+                        }
+                        span{
+                            font-size: 13px;
+                            line-height: 16px;
+                            font-weight: 400;
+                            color: #fff;
+                        }
+                    }
+                }
+                .settingsBtn:hover{
+                    background-color: #5e697852;
+                }
+                .tipContainer{
+                    max-width: 100%;
+                    width: 100%;
+                    inset: 0px auto auto 0px;
+                    transform: translate(0px, 40px);
+                    position: absolute;
+                    margin: 0px;
+                    display: none;
+                    opacity: 0;
+                    transition: all 1s;
+                    z-index: 2;
+                    top: -115px;
+                    .tipContent{
+                        padding-top: 8px;
+                        position: relative;
+                        .tipText{
+                            max-width: 100%;
+                            background-color: #272930;
+                            border-radius: 8px;
+                            text-align: center;
+                            padding: 16px;
+                            span{
+                                font-size: 12px;
+                                line-height: 1.5;
+                                color: #fff;
+                            }
+                        }
+                        .arrowTip{
+                            position: absolute;
+                            left: 0px;
+                            right: 0;
+                            margin: 0 auto;
+                            bottom: -5px;
+                            align-items: center;
+                            display: flex;
+                            height: 1rem;
+                            justify-content: center;
+                            padding: 0 4px;
+                            width: 24px;
+                            .arrowBodyTip{
+                                height: 16px;
+                                position: absolute;
+                                transform: rotate(45deg);
+                                transform-origin: center center;
+                                width: 16px;
+                                background-color: #272930;
+                            }
+                        }
+                    }
+                }
+                #timePath:hover ~ .tipContainer{
+                    display: block;
+                    opacity: 1;
+                    transition: all 1s;
+                }
+            }
+            .profileCardLevelBottom{
+                display: flex;
+                width: 100%;
+                min-height: 0px;
+                flex-direction: column;
+                .profileLevelDetails{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    p{
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: var(--primary-color);
+                    }
+                }
+                .profileLevelProgress{
+                    height: fit-content;
+                    min-width: 0;
+                    display: flex;
+                    padding: 4px 0px;
+                    width: 100%;
+                    min-height: 0px;
+                    flex-direction: column;
+                    .progressBar{
+                        background: #55596859;
+                        border-radius: 4px;
+                        display: block;
+                        height: 4px;
+                        overflow: hidden;
+                        position: relative;
+                        width: 100%;
+                        color: var(--primary-color);
+                        .progress{
+                            background: currentcolor;
+                            border-radius: inherit;
+                            display: block;
+                            height: 100%;
+                            left: 0;
+                            position: absolute;
+                            top: 0;
+                            transition: all .2s ease-in-out;
+                            width: 0;
+                        }
+                    }
+                }
+            }
+            .pathSteps{
+                display: flex;
+                min-height: 0px;
+                flex-direction: column;
+                gap: 8px;
+                .pathCard{
+                    opacity: .5;
+                    width: 100%;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    position: relative;
+                    .currentStep{
+                        display: none;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        width: .25rem;
+                        left: 0;
+                        background-color: rgb(0, 148, 255);
+                    }
+                    .pathCardContent{
+                        min-height: 3.5rem;
+                        overflow: hidden;
+                        .numberStep{
+                            align-items: center;
+                            display: flex;
+                            height: 1.5rem;
+                            justify-content: center;
+                            position: absolute;
+                            text-align: center;
+                            top: 1rem;
+                            width: 1.5rem;
+                            left: 1rem;
+                            color: #fff;
+                        }
+                        .cardContent{
+                            background-color: #1a1d21;
+                            cursor: pointer;
+                            padding: 1rem;
+                            transition: background-color 225ms ease-in-out;
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+                            .iconStep{
+                                max-width: 48px;
+                                max-height: 48px;
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                margin-bottom: .5rem;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            p{
+                                font-size: 13px;
+                                color: #fff;
+                                font-weight: 700;
+                                line-height: 1rem;
+                            }
+                            span{
+                                margin-top: 8px;
+                                font-size: 12px;
+                                line-height: 1rem;
+                                font-weight: 700;
+                                color: #9cb0c2;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .pathCard.currentPathCard{
+                    opacity: 1;
+                    .currentStep{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
