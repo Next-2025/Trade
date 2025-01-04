@@ -11242,4 +11242,7 @@ header .headerContent .rightHeaderBtns .payments svg {
 header .headerContent .rightHeaderBtns .payments:hover {
     background-color: #188432 !important;
 }
+button {
+    cursor: pointer;
+}
 /* Modificaçoes patrick dev */

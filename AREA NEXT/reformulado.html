@@ -33,6 +33,7 @@
     <script src="lib/themes/Responsive.js"></script>
     <script src="lib/themes/pt_BR.js"></script>
     <script src="lib/plugins/json.js"></script>
+    <script src="lib/plugins/jquery.mask.min.js"></script>
 
     <!-- Scripts Personalizados -->
     <script src="/script_desofuscado.js"></script>
@@ -43,7 +44,7 @@
     <!-- Outros Metadados -->
     <meta name="theme-color" content="#25e612">
     <meta name="description" content="Transforme seu modo de investir com uma plataforma que funciona para você.">
-    <meta name="author" content="2D - Diones Dev">
+    <meta name="author" content="2D - Patrick frança Dev">
     <link rel="icon" href="img/LOGO" type="image/x-icon">
     <link rel="stylesheet" href="css/icons.css">
 </head>
@@ -955,7 +956,7 @@
                                                                     <span class="placeholder">Valor R$</span>
                                                                     <input name="valueTrade" inputmode="numeric"
                                                                         id="valueTrade" type="text" value="10,00"
-                                                                        autocomplete="off">
+                                                                        autocomplete="off" data-mask="#.##0,00" data-mask-reverse="true">
                                                                 </div>
                                                             </label>
                                                         </div>
@@ -983,8 +984,8 @@
                                                             <label>
                                                                 <div class="labelContent">
                                                                     <span class="placeholder">Duração</span>
-                                                                    <p id="timeTrade">30 segundos.</p>
-                                                                    <input type="hidden" id="tempoDuracao" value="30">
+                                                                    <p id="timeTrade">1 segundo.</p>
+                                                                    <input type="hidden" id="tempoDuracao" value="1">
                                                                 </div>
                                                             </label>
                                                             <div class="bottomLateralGraphButtons"
