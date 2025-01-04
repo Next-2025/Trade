@@ -11224,4 +11224,22 @@ body {
     transition: all .3s ease;
     animation: alternate 3s linear infinite loading;
 }
+
+.layoutBody .platformContainerTrading .platformContainerTradingMain .tradeFrameSection {
+    grid-template-columns: auto 12.5rem !important;
+}
+header .headerContent {
+    gap: 0 !important;
+}
+header .headerContent .rightHeaderBtns .payments  {
+    width: 10.5rem;
+    border: solid 2px var(--primary-color) !important;
+    background: none !important;
+}
+header .headerContent .rightHeaderBtns .payments svg {
+    display: unset !important;
+}
+header .headerContent .rightHeaderBtns .payments:hover {
+    background-color: #188432 !important;
+}
 /* Modificaçoes patrick dev */

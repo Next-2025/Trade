@@ -84,6 +84,29 @@ am5.ready(function () {
     // Desativar os números no eixo Y
     yAxis.get("renderer").labels.template.set("forceHidden", true);
     
+    // Ajustar o renderer do eixo X
+    xAxis.get("renderer").grid.template.setAll({
+        strokeOpacity: 0.1, // Opacidade da grade
+        strokeWidth: 1
+    });
+
+    // Ajustar o renderer do eixo Y
+    yAxis.get("renderer").grid.template.setAll({
+        strokeOpacity: 0.1, // Opacidade da grade
+        strokeWidth: 1
+    });
+
+    // Sincronizar os intervalos dos eixos para criar quadrados
+    xAxis.onPrivate("max", function () {
+        const xRange = xAxis.getPrivate("max") - xAxis.getPrivate("min");
+        const yRange = yAxis.getPrivate("max") - yAxis.getPrivate("min");
+
+        const ratio = xRange / yRange;
+        yAxis.get("renderer").grid.template.setAll({
+            height: xAxis.get("renderer").grid.template.get("width") / ratio
+        });
+    });
+
     // var yAxis = chart.yAxes.push(
     //     am5xy.ValueAxis.new(root, {
     //         maxDeviation: 1,
@@ -119,6 +142,26 @@ am5.ready(function () {
             tooltip: null
         })
     );
+
+    // cores personalizadas
+    series.columns.template.adapters.add("fill", function (fill, target) {
+        if (target.dataItem) {
+            return target.dataItem.get("valueY") > target.dataItem.get("openValueY") 
+                ? am5.color("#188432") // Cor verde personalizada
+                : am5.color("#D62940"); // Cor vermelha personalizada
+        }
+        return fill;
+    });
+    
+    series.columns.template.adapters.add("stroke", function (stroke, target) {
+        if (target.dataItem) {
+            return target.dataItem.get("valueY") > target.dataItem.get("openValueY") 
+                ? am5.color("#188432") // Cor verde personalizada
+                : am5.color("#D62940"); // Cor vermelha personalizada
+        }
+        return stroke;
+    });
+
 
     // Add cursor
     // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
