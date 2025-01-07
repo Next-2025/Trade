@@ -1,3 +1,29 @@
+<?php
+/**
+ * Função para gerar o caminho do arquivo com a última modificação
+ * @param string $file Caminho relativo do arquivo
+ * @return string URL com a query string baseada na última modificação
+ */
+function getFileWithVersion($file) {
+    // Caminho completo do arquivo no servidor
+    $filePath = $_SERVER['DOCUMENT_ROOT'] . '/' . $file;
+
+    // Verifica se o arquivo existe
+    if (file_exists($filePath)) {
+        // Adiciona o timestamp da última modificação como query string
+        return $file . '?v=' . filemtime($filePath);
+    } else {
+        // Retorna o arquivo sem modificação se ele não existir
+        return $file;
+    }
+}
+
+// Exemplo de uso
+$cssFile = getFileWithVersion('assets/styles.css');
+$jsFile = getFileWithVersion('assets/script.js');
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -9,12 +35,11 @@
     <link rel="icon" href="img/fivecon.png" type="image/png">
 
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="<?= getFileWithVersion("slick/slick.css")?>">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.min.js">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css"> <!-- Caminho ajustado -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="<?= getFileWithVersion("css/style.css")?>">
+    <link rel="stylesheet" href="<?= getFileWithVersion("css/main.css")?>"> <!-- Caminho ajustado -->
     <script src="bundle.js"></script>
 
     <!-- jQuery -->
@@ -26,7 +51,7 @@
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Dark.js"></script>
     <script src="lib/themes/Animated.js"></script>
-    <script src="JavaScript/configChart.js"></script>
+    <script src="<?= getFileWithVersion("JavaScript/configChart.js")?>"></script>
 
     <!-- Scripts Adicionais -->
     <script src="lib/themes/stock.js"></script>
