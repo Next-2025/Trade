@@ -296,7 +296,7 @@ function sidebarRightOpen(target) {
             if (target === "components/sideBar/newPasswordSideBar.php") {
                 initPasswordCheck();
             }
-            if (target === "components/sideBar/profileSideBar.php") {
+            if (target === "components/sideBar/profileSideBar/") {
                 initProfileIdCopy();
             }
             if (target === "components/sideBar/accountSideBar.php") {

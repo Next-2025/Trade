@@ -11245,4 +11245,20 @@ header .headerContent .rightHeaderBtns .payments:hover {
 button {
     cursor: pointer;
 }
+.titleLeaveProfileBtn {
+    margin: 0 !important;
+}
+.sideBarPanel .valueDepositPanelContainer .valueDepositPanelContent .valuesOption .valueOptionBtn {
+    min-height: 3rem !important;
+    padding: 0 !important;
+}
+.sideBarPanel .valueDepositPanelContainer .valueDepositPanelContent .valuesOption .valueOptionBtn .valueOptionBtnContent {
+    place-content: center !important;
+}
+.sideBarPanel .valueDepositPanelContainer .valueDepositPanelContent {
+    gap: 10px !important;
+}
+.valueDepositBtn {
+    background-color: var(--deposit-button) !important;
+}
 /* Modificaçoes patrick dev */
